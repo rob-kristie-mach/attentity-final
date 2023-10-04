@@ -1,5 +1,5 @@
 <template>
-    <div class="thank-you text-center">
+    <div class="thank-you text-center py-20">
        <div v-html="pageData.elements.untitled_rich_text.value" />
     </div>
 </template>
