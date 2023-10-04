@@ -20,7 +20,9 @@ export default {
     ],
     script: [
       // <script src="https://myawesome-lib.js"></script>
-      { src: '/js/preline.js' }
+      { src: '/js/preline.js' },
+      {src: "/cookiebotHide.js"},
+      { src: "https://consent.cookiebot.com/uc.js?cbid=abb50094-60dd-4ec0-b61b-4a5f40e6922f" }
     ],
   },
 

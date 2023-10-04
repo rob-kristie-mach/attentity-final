@@ -1,0 +1,2 @@
+/learning-hub   /content-hub/
+/learning-hub/*  /content-hub/:splat
