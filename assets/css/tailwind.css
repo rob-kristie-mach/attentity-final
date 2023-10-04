@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+
+
+@layer base {
+    *{
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h1 {
+      @apply text-5xl; 
+      @apply mb-5;
+      @apply font-bold;
+      @apply leading-tight;
+    }
+    
+    h2 {
+      @apply text-3xl;
+      @apply mb-3;
+      @apply font-normal;
+    }
+    h3 {
+      @apply text-2xl;
+      @apply mb-3;
+      @apply font-normal;
+    }
+    h4 {
+      @apply text-2xl;
+      @apply mb-2;
+      @apply font-bold;
+    }
+    h5 {
+     @apply mt-3;
+     @apply mb-2;
+      @apply font-bold;
+    }
+    p{
+      @apply mb-3
+    }
+    
+    
+    .btn {
+      @apply py-2 px-4 rounded-md mr-3;
+  }
+    .btn-primary {
+        @apply bg-colors-primary text-colors-white border-colors-primary border-2;
+        &:hover{
+          @apply bg-colors-white text-colors-primary border-colors-primary border-2;
+        }
+    }
+    .btn-outline {
+      @apply bg-colors-white text-colors-primary border-colors-primary border-2;
+      
+      &:hover{
+        @apply bg-colors-primary text-colors-white border-colors-primary border-2;
+        
+      }
+    }
+    .btn-white {
+      @apply bg-colors-white text-colors-primary border-colors-white border-2;
+      
+      &:hover{
+        @apply bg-colors-primary text-colors-white border-colors-white border-2;
+        
+      }
+    }
+
+    footer{
+      p{
+        margin-bottom:0px;
+      }
+    }
+    .classic-hero{
+        background-color:#ececec;
+        background-size:cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        @media(min-width:992px){
+            background-position: right center;
+        }
+        p, h1{
+            color:#fff;
+        }
+        h1{
+            font-weight:700;
+            color:#fff;
+            font-size:22px;
+            @media(min-width:992px){
+                font-size:60px;
+            }
+        }
+    }
+  }
+  
+  @tailwind utilities;
